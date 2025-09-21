@@ -6,6 +6,9 @@ import { faCircleCheck, faEnvelope, faFaceAngry, faStar, faStarHalfStroke, faThu
 import { faFacebook, faGithub, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faBacon, faBaseball, faBasketball, faCheck, faPerson, faPersonArrowUpFromLine, faPersonBooth, faPersonBurst, faPersonCircleCheck, faPersonDrowning } from '@fortawesome/free-solid-svg-icons'
 import { inertia, interpolate, motion } from 'framer-motion'
+import { Route, Routes, Link } from 'react-router'
+import Term from '../Terms/Term'
+
 
 /* This function is not working
 const observer = new
@@ -32,6 +35,11 @@ const About = () => {
 
       return (
             <>
+
+                  <Routes>
+                        <Route path='/term' element={<Term />} />
+                  </Routes>
+
                   <div>
                         <div className="main-content h-1150 w-full  bg-gray-900">
                               <motion.div
@@ -536,10 +544,10 @@ const About = () => {
                                           className="section-2 text-white ">
                                           <ul >
                                                 <li>Company</li>
-                                                <li className='pt-8 cursor-pointer' >About Us</li>
-                                                <li className='pt-8 cursor-pointer'>Carrer</li>
-                                                <li className='pt-8 cursor-pointer'>Case studies</li>
-                                                <li className='pt-8 cursor-pointer'>Contact us</li>
+                                                <li className='btn pt-8 cursor-pointer' >About Us</li>
+                                                <li className='btn pt-8 cursor-pointer'>Carrer</li>
+                                                <li className='btn pt-8 cursor-pointer'>Case studies</li>
+                                                <li className='btn pt-8 cursor-pointer'>Contact us</li>
                                           </ul>
                                     </motion.div>
                                     <motion.div
@@ -555,10 +563,10 @@ const About = () => {
                                           className="section-3 text-white">
                                           <ul>
                                                 <li>Support</li>
-                                                <li className='pt-8 cursor-pointer'>FAQ </li>
-                                                <li className='pt-8 cursor-pointer'>Documentation</li>
-                                                <li className='pt-8 cursor-pointer'>Tutorial</li>
-                                                <li className='pt-8 cursor-pointer'>Support</li>
+                                                <li className='btn pt-8 cursor-pointer'>FAQ </li>
+                                                <li className='btn pt-8 cursor-pointer'>Documentation</li>
+                                                <li className='btn pt-8 cursor-pointer'>Tutorial</li>
+                                                <li className='btn pt-8 cursor-pointer'>Support</li>
                                           </ul>
                                     </motion.div>
                                     <motion.div
@@ -574,11 +582,11 @@ const About = () => {
                                           className="section-4 text-white">
                                           <ul>
                                                 <li>Legal Policies</li>
-                                                <li className='pt-8 cursor-pointer '>Terms & Conditions</li>
-                                                <li className='pt-8 cursor-pointer'>Privacy Policy</li>
-                                                <li className='pt-8 cursor-pointer'>Refund Policy</li>
-                                                <li className='pt-8 cursor-pointer'>GDPR Compliance</li>
-                                                <li className='pt-8 cursor-pointer'>Affiliate Policy</li>
+                                                <li className='btn pt-8 cursor-pointer '>Terms & Conditions</li>
+                                                <li className='btn pt-8 cursor-pointer'><Link to="/term" >Privacy Policy</Link></li>
+                                                <li className='btn pt-8 cursor-pointer'>Refund Policy</li>
+                                                <li className='btn pt-8 cursor-pointer'>GDPR Compliance</li>
+                                                <li className='btn pt-8 cursor-pointer'>Affiliate Policy</li>
                                           </ul>
                                     </motion.div>
                               </div>
