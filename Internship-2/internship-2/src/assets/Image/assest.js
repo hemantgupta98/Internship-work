@@ -11,6 +11,8 @@ import circle from './circle.png'
 import sc1 from './sc1.png'
 import profile from './profile.png'
 import dark from './dark.svg'
+import privacy from './privacy.png'
+import affiliates from './affiliates.png'
 
 export const assest = {
       avatar1,
@@ -25,5 +27,7 @@ export const assest = {
       circle,
       sc1,
       profile,
-      dark
+      dark,
+      privacy,
+      affiliates
 }

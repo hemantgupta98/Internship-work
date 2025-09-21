@@ -6,7 +6,7 @@ import { faCircleCheck, faEnvelope, faFaceAngry, faStar, faStarHalfStroke, faThu
 import { faFacebook, faGithub, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faBacon, faBaseball, faBasketball, faCheck, faPerson, faPersonArrowUpFromLine, faPersonBooth, faPersonBurst, faPersonCircleCheck, faPersonDrowning } from '@fortawesome/free-solid-svg-icons'
 import { inertia, interpolate, motion } from 'framer-motion'
-import { Route, Routes, Link } from 'react-router'
+import { Route, Routes, Link, NavLink } from 'react-router'
 import Term from '../Terms/Term'
 
 
@@ -583,7 +583,7 @@ const About = () => {
                                           <ul>
                                                 <li>Legal Policies</li>
                                                 <li className='btn pt-8 cursor-pointer '>Terms & Conditions</li>
-                                                <li className='btn pt-8 cursor-pointer'><Link to="/term" >Privacy Policy</Link></li>
+                                                <li className='btn pt-8 cursor-pointer'>Privacy Policy</li>
                                                 <li className='btn pt-8 cursor-pointer'>Refund Policy</li>
                                                 <li className='btn pt-8 cursor-pointer'>GDPR Compliance</li>
                                                 <li className='btn pt-8 cursor-pointer'>Affiliate Policy</li>
