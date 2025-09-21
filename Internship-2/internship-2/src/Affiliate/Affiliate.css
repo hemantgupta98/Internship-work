@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.ul {
+      list-style: circle;
+}
+
+.center-content {
+      display: flex;
+      align-items: center;
+      justify-self: center;
+      padding-top: 10rem;
+}
+
+.button:hover {
+      background-color: white;
+      color: black;
+
+}
+
+button {
+      cursor: pointer;
+}
+
+@media (max-width:1200px) {
+      .center-content {
+            margin-left: 20px;
+            margin-right: 20px;
+      }
+}
+
+@media (max-width:630px) {
+      .bottom-1 {
+            margin-top: 8rem;
+      }
+}

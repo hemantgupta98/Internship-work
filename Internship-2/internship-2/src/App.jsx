@@ -5,6 +5,7 @@ import './App.css'
 import About from './About/About'
 import Term from './Terms/Term'
 import Privacy from './Privacy/Privacy'
+import Affiliate from './Affiliate/Affiliate'
 
 
 
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <>
-      <Privacy />
+      <Affiliate />
 
     </>
   )
